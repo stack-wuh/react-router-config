@@ -1,0 +1,25 @@
+.nav {
+    position: relative;
+    width: 180px;
+    max-width: 180px;
+    overflow: hidden;
+}
+.nav ul,
+.nav ol,
+.nav li {
+    padding: 4px;
+    margin: 0;
+    list-style: none;
+
+    text-decoration: none;
+}
+.nav a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+    .nav {
+        position: relative;
+        left: -100%;
+    }
+}
