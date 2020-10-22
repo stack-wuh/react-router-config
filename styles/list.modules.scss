@@ -1,0 +1,23 @@
+@import './var.scss';
+
+.#{$prefix}-list {
+    width: 100%;
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: var(--padding-default) 4px;
+        margin-bottom: var(--margin-default);
+        background-color: var(--background-color-default);
+    }
+
+    &-item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .is-border {
+        border: 1px solid var(--border-color-default);
+        border-radius: var(--border-radius-default);
+    }
+}

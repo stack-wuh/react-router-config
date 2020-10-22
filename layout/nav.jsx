@@ -4,8 +4,8 @@ import styles from '../styles/nav.module.css'
 
 const NormalNav = () => {
   return (<nav className={styles.nav}>
-      <ul>
-          <li><Link href='/'>articles</Link></li>
+      <ul className={styles.menu}>
+          <li className={styles.menuItem}><Link href='/'>articles</Link></li>
       </ul>
   </nav>)
 }

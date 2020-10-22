@@ -7,7 +7,7 @@ const NormalLayout = ({
 }) => {
     return (<>
         <Header />
-        <div className='content'>
+        <div className='content flex'>
             {
                 leftRender && (<div>{leftRender()}</div>)
             }

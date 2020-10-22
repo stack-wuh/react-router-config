@@ -4,4 +4,5 @@ header.header {
     justify-content: flex-start;
     background-color: var(--background-color-default);
     opacity: 0.8;
+    z-index: 99;
 }

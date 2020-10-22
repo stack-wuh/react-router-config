@@ -418,6 +418,14 @@ template {
 
   --text-color-default: #333;
   --background-color-default: #f5f5f5;
+
+  --border-radius-default: 3px;
+  --border-color-default: #eee;
+
+  --menu-item-background-color: #f7f7f7;
+
+  --padding-default: 8px;
+  --margin-default: 8px
 }
 
 .link, [data-type='link'] {
@@ -446,5 +454,6 @@ template {
 
 .flex {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
