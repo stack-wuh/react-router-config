@@ -17,7 +17,7 @@ const Index = () => {
         <List>
             {
                 source.map(item => (<Item key={item._id}>
-                    {item._id}
+                    <Link scroll href={`/article/1`}>{item._id}</Link>
                 </Item>))
             }
         </List>

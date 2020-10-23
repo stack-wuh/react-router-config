@@ -432,26 +432,6 @@ template {
   color: var(--primary-color-light);
 }
 
-::-webkit-scrollbar {
-  background-color: var(--background-color-default);
-}
-::-webkit-scrollbar .thumb {
-  border-radius: 5px;
-  width: 6px;
-  background: var(--primary-color-light);
-}
-::-webkit-scrollbar .corner {
-  background: var(--background-color-default);
-}
-::-webkit-scrollbar .track {
-  background: red;
-}
-::-webkit-scrollbar .track-piece {
-  width: 6px;
-  background: var(--primary-color-light);
-}
-
-
 .flex {
   display: flex;
   align-items: flex-start;
