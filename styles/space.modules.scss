@@ -1,0 +1,31 @@
+@import './var.scss';
+
+.#{$prefix}-space {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  transition: var(--transition-ease);
+
+  &-horizontal {
+      flex-direction: row;
+  }
+  &-vertical {
+      flex-direction: column;
+  }
+
+  &-align-center {
+      align-items: center;
+  }
+  &-align-start {
+      align-items: flex-start;
+  }
+  &-align-end {
+      align-items: flex-end;
+  }
+  &-item {
+      transition: var(--transition-ease);
+  }
+}

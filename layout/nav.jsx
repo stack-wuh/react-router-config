@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from '../styles/nav.module.css'
+import classnames from 'classnames'
+const PREFIX = 'ws-nav'
 
 const NormalNav = () => {
-  return (<nav className={styles.nav}>
-      <ul className={styles.menu}>
-          <li className={styles.menuItem}><Link href='/'>articles</Link></li>
+  const classNames = classnames(`${PREFIX}`)
+  return (<nav className={classNames}>
+      <ul className={`${PREFIX}-menu`}>
+          <li className={`${PREFIX}-memu-item`}><Link href='/'>articles</Link></li>
       </ul>
   </nav>)
 }

@@ -1,15 +1,20 @@
 @import './var.scss';
+$prefix: 'ws';
 
 .#{$prefix}-list {
     width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 
     &-item {
+        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         padding: var(--padding-default) 4px;
         margin-bottom: var(--margin-default);
         background-color: var(--background-color-default);
+        box-sizing: border-box;
     }
 
     &-item:last-of-type {

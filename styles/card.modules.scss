@@ -1,0 +1,26 @@
+$PREFIX: ws-card;
+
+.#{$PREFIX} {
+    width: 100%;
+    height: auto;
+    padding: var(--padding-default) var(--padding-default);
+    border-radius: var(--border-radius-default);
+    border: 1px solid var(--border-color-default);
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &-content {
+        padding: var(--padding-default) 0;
+    }
+
+    &-footer {
+        border-top: var(--border-default);
+        padding: var(--padding-default) 0;
+        font-size: var(--font-size-default);
+        line-height: calc(var(--font-size-default) + 8px);
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}

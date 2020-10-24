@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import classnames from 'classnames'
-const PREFIX = 'ws'
+const PREFIX = 'ws-list'
 
 const ListItem = ({
     style,
@@ -10,7 +10,7 @@ const ListItem = ({
     justifyContent='flex-start'
 }) => {
 
-  const classNames = classnames(`${PREFIX}-list-item`, {
+  const classNames = classnames(`${PREFIX}-item`, {
       'is-border': border
   })
 
