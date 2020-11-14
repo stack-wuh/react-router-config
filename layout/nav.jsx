@@ -7,7 +7,7 @@ const NormalNav = () => {
   const classNames = classnames(`${PREFIX}`)
   return (<nav className={classNames}>
       <ul className={`${PREFIX}-menu`}>
-          <li className={`${PREFIX}-memu-item`}><Link href='/'>articles</Link></li>
+        <li className={`${PREFIX}-menu-item`}><Link href='/'>articles</Link></li>
       </ul>
   </nav>)
 }
