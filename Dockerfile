@@ -1,10 +1,19 @@
-FROM node:10-alpine
+# 加载基础镜像
+FROM mhart/alpine-node
 
-ENV PROJECT_ENV production
+LABEL maintainer = "shadow <wuh131420@gmail.com>"
 
-ENV NODE_ENV production
+# 创建工作目录
+RUN rm -rf /work
+RUN mkdir /work
+WORKDIR /work
 
-WORKDIR /code
-ADD . /code
-RUN npm install && npm run server
-EXPOSE 3010
+# 安装项目依赖
+COPY . /work
+RUN npm install
+RUN npm run build
+
+EXPOSE 3100
+
+CMD npm run start 
+
