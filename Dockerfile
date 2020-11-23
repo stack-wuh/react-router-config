@@ -3,13 +3,15 @@ FROM mhart/alpine-node
 
 LABEL maintainer = "shadow <wuh131420@gmail.com>"
 
+# 指定工作目录
+WORKDIR /usr/src/app
+
 # 创建工作目录
-RUN rm -rf /work
-RUN mkdir /work
-WORKDIR /work
+COPY package.json /usr/src/app
+COPY package-lock.json /usr/src/app
 
 # 安装项目依赖
-COPY . /work
+COPY . /usr/src/app
 RUN npm install
 RUN npm run build
 
